@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FiNext</string>
+
+    <!--Splash Labels-->
+    <string name="splash_name">FiNEXT</string>
+    <string name="splash_sub_name">Financial Expense Tracking App</string>
+    <string name="tagline">Plan your next move</string>
+    <string name="splash_button">Open</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Menu Labels-->
+    <string name="Home">Home</string>
+    <string name="Finote">FiNote</string>
+    <string name="Finance">Finance</string>
+    <string name="Profile">Profile</string>
+
+    <!--Profile Buttons  Labels-->
+    <string name="profile_darkMode">Dark Mode</string>
+    <string name="profile_password_btn">Change Password</string>
+    <string name="profile_language">Language</string>
+    <string name="profile_about">About App</string>
+    <string name="profile_terms">Terms &amp; Condition</string>
+    <string name="profile_privacy">Privacy Policy</string>
+    <string name="profile_share">Share This App</string>
+
+
+</resources>
