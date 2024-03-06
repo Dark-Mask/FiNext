@@ -26,7 +26,7 @@
     <string name="profile_share">Share This App</string>
 
     <!-- FINANCE AND BUDGET STRING DEFINITIONS -->
-    <string name="budget_header">Finance and Budget</string>
+    <string name="budget_header">Finance and Expense</string>
 
     <string-array name="items">
         <item>RTX 4090</item>
