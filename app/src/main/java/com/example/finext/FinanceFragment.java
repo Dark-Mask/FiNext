@@ -2,11 +2,17 @@ package com.example.finext;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +29,8 @@ public class FinanceFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    ArrayList<ExpensesModel> expensesModels = new ArrayList<>();
 
     public FinanceFragment() {
         // Required empty public constructor
@@ -60,5 +68,26 @@ public class FinanceFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_finance, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        RecyclerView historyView = getView().findViewById(R.id.historyRecyclerView);
+        setupExpensesModel();
+        DummyExpensesAdapter adapter = new DummyExpensesAdapter(this.getContext(), expensesModels);
+        historyView.setAdapter(adapter);
+        historyView.setLayoutManager(new LinearLayoutManager(this.getContext()));
+    }
+
+    private void setupExpensesModel() {
+        String[] items = getResources().getStringArray(R.array.items);
+        String[] from = getResources().getStringArray(R.array.from);
+        String[] cost = getResources().getStringArray(R.array.cost);
+
+        for (int i = 0; i < items.length; i++) {
+            expensesModels.add(new ExpensesModel(items[i], from[i], cost[i], R.drawable.shopee));
+        }
     }
 }
