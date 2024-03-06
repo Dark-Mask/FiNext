@@ -6,21 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".FiNoteFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FF9800">
+        android:background="@color/white">
 
-        <TextView
-            android:id="@+id/textView4"
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="320dp"
+            android:layout_height="551dp"
+            android:layout_marginTop="27dp"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <View
+            android:id="@+id/view2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="FiNote"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="90dp"
+            android:background="@color/deep_sky_blue"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="Expense Note"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
