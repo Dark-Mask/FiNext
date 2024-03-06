@@ -7,4 +7,11 @@
     <color name="gray">#EDEDED</color>
     <color name="graytext">#938988</color>
     <color name="deep_sky_blue">#03A9F4</color>
+
+
+    <color name="alice_blue">#EEF7FF</color>
+    <color name="gunmetal">#292F36</color>
+    <color name="silver">#CFC0BD</color>
+    <color name="fern_green">#4B7F52</color>
+    <color name="celestial_blue">#058ED9</color>
 </resources>

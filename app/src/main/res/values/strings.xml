@@ -25,5 +25,36 @@
     <string name="profile_privacy">Privacy Policy</string>
     <string name="profile_share">Share This App</string>
 
+    <!-- FINANCE AND BUDGET STRING DEFINITIONS -->
+    <string name="budget_header">Finance and Budget</string>
 
+    <string-array name="items">
+        <item>RTX 4090</item>
+        <item>RTX 4080</item>
+        <item>RTX 4080 SUPER</item>
+        <item>RTX 4070</item>
+        <item>RTX 4070 SUPER</item>
+        <item>RTX 4060</item>
+        <item>RTX 4060 TI</item>
+    </string-array>
+
+    <string-array name="cost">
+        <item>₱ 93,961</item>
+        <item>₱ 67,340</item>
+        <item>₱ 73,650</item>
+        <item>₱ 40,999</item>
+        <item>₱ 46,799</item>
+        <item>₱ 18,500</item>
+        <item>₱ 26,895</item>
+    </string-array>
+
+    <string-array name="from">
+        <item>Shopee</item>
+        <item>Shopee</item>
+        <item>Shopee</item>
+        <item>Shopee</item>
+        <item>Shopee</item>
+        <item>Shopee</item>
+        <item>Shopee</item>
+    </string-array>
 </resources>
